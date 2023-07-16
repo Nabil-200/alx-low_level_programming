@@ -10,22 +10,25 @@ int main(void)
 	int d;
 	int p;
 
-	for (d = 0; d <= 9; d++)
+	while (d <= '9')
 	{
-	for (p = d + 1; p <= 0; p++)
-	{
-	if (p != d)
-	{
-	putchar(d);
-	putchar(p);
-	if (d == '8' && p == '9')
-	continue;
-	putchar(',');
-	putchar(' ');
-	}
-	}
+		while (p <= '9')
+		{
+			if (d < p)
+			{
+				putchar(d);
+				putchar(p);
+				if (d != '8' || (d == '8' && p != '9'))
+				{
+					putchar(',');
+					putchar(' ');
+				}
+			}
+			p++;
+		}
+		d++;
+		p = '0';
 	}
 	putchar('\n');
 	return (0);
-
 }
