@@ -7,6 +7,7 @@
 int main(void)
 {
 	int i;
+	int sum;
 
 	sum = 0;
 
