@@ -3,7 +3,7 @@
    *jack_bauer - Counts the time
    *Return: Always 0 (Success)
    */
-int jack_bauer(void)
+void jack_bauer(void)
 {
 	int a, b, c, d;
 
