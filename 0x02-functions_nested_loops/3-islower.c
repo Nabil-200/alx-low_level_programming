@@ -4,7 +4,7 @@
    *@c: The input is an ASCII code
    *Return: 1 for lowercase, 0 if not
    */
-int _islower(int c);
+int _islower(int c)
 {
 	if (c >= 97 && c <= 122)
 	{
@@ -14,5 +14,5 @@ int _islower(int c);
 	{
 		return (0);
 	}
-	_putchar('\n')
+	_putchar('\n');
 }
