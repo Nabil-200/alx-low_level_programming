@@ -1,7 +1,7 @@
 #include "main.h"
 /**
    *_abs - Returns absolte value
-   *@int: an int value
+   *@a: an int value
    *Return: Always 0 (Success)
    */
 int _abs(int a)

@@ -1,7 +1,7 @@
 #include "main.h"
 /**
    *print_last_digit- Print last digit
-   *@int: takes in int
+   *@n: takes in int
    *Return: Always 0 (Success)
    */
 
