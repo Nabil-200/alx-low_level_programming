@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  *_memset - It places a specified constant byte
  *in a memory
@@ -9,10 +10,11 @@
  **/
 char *_memset(char *s, char b, unsigned int n);
 {
-	unsigned int a;
+	int a = 0;
 
-	for (a = 0; a < n; a++)
+	while (a < n)
 	{
+		a++;
 		s[a] = b;
 	}
 	_putchar('\n');
