@@ -5,7 +5,7 @@
  *@c: character searched for
  *Return: a pointer to the first of instance of string
  **/
-char *_strchr(char *s, char c);
+char *_strchr(char *s, char c)
 {
 	int x = 0;
 
