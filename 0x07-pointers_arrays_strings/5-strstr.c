@@ -4,13 +4,12 @@
  * _strstr - Entry point
  * @haystack: whole string
  * @needle: substring
- * Return: Always 0 (Success)
+ * Return: haystack and 0
  */
 char *_strstr(char *haystack, char *needle)
 {
-	while ( *haystack != '\0')
+	for (; *haystack != '\0'; haystack++)
 	{
-		haystack++;
 		char *a = haystack;
 		char *b = needle;
 
