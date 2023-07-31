@@ -8,9 +8,9 @@
  *@n: number of bytes to filled
 *Return: s pointer
  **/
-char *_memset(char *s, char b, unsigned int n);
+char *_memset(char *s, char b, unsigned int n)
 {
-	int a = 0;
+	unsigned int a = 0;
 
 	while (a < n)
 	{
