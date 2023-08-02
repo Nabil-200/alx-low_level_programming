@@ -1,5 +1,5 @@
 #include "main.h"
-int main_sqrt_rec(int n, int itr);
+int main_sqrt_rec(int n, int i);
 
 /**
   *_sqrt_recursion - find sqrroot of an input
@@ -25,7 +25,7 @@ int main_sqrt_rec(int n, int itr)
 {
 	if (itr * itr != n)
 		return (-1);
-	else
+	if (itr * itr == n)
 		return (itr);
-		return (main_sqrt_rec(n, itr + 1));
+	return (main_sqrt_rec(n, itr + 1));
 }
