@@ -1,4 +1,6 @@
 #include "main.h"
+int main_sqrt_rec(int n, int itr);
+
 /**
   *_sqrt_recursion - find sqrroot of an input
   *@n: integer
