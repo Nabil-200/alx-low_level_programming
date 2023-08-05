@@ -7,8 +7,9 @@
   *@argc: Count of arguments in array
   *Return: 0
 **/
-int main(int argc_attribute_((unused)), char *argv[])
+int main(int arg, char *argv[])
 {
+	(void) argc;
 	printf("%s\n", *argv);
 
 	return (0);
