@@ -2,30 +2,6 @@
 #include <stdlib.h>
 #include <ctype.h>
 #include <string.h>
-/**
- * check_num - check - string there are digit
- * @str: array str
- *
- * Return: Always 0 (Success)
- */
-int check_num(char *str)
-{
-	
-	unsigned int c = 0;
-
-	
-	while (c < strlen(str)) /*count string*/
-
-	{
-		if (!isdigit(str[c])) /*check if str there are digit*/
-		{
-			return (0);
-		}
-
-		c++;
-	}
-	return (1);
-}
 
 /**
  * main - Print the name of the program
@@ -39,18 +15,17 @@ int main(int argc, char *argv[])
 
 {
 
-	
 	int c;
 	int str_to_int;
 	int s = 0;
 
 	count = 1;
-	while (c < argc) 
+	while (c < argc)
 	{
 		if (check_num(argv[c]))
 
 		{
-			str_to_int = atoi(argv[c]); 
+			str_to_int = atoi(argv[c]);
 			s += str_to_int;
 		}
 
@@ -67,4 +42,3 @@ int main(int argc, char *argv[])
 
 	return (0);
 }
-
